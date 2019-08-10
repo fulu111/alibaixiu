@@ -33,7 +33,7 @@
       let email = $('#email').val();
       let password = $('#password').val();
       // 使用正则表达式对输入框里面的内容进行验证
-      let emailReg = /\w+[@]\w+[.\w+]/;
+      let emailReg = /\w+[@]\w+[.]\w+/;
       if(!emailReg.test(email)){
         $('.alert').fadeIn(1000).delay(1000).fadeOut(1000);
         $('#msg').text('邮箱地址不合法');
