@@ -29,6 +29,15 @@ $('#userAdd').on('click',function(){
         success:function(res){
             userArr.push(res);
             render(userArr);
+            $('#hiddenAvatar').val('');
+            $('#preview').attr('src','../assets/img/default.png');
+            $('#email').val('');
+            $('#nickName').val('');
+            $('#password').val('');
+            $('#admin').prop('checked',false);
+            $('#normal').prop('checked',false);
+            $('#jh').prop('checked',false);
+            $('#wjh').prop('checked',false);
         }
     })
 })
